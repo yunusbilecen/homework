@@ -26,6 +26,10 @@ public class HomeWork2 {
 		/*------------------------------------*/
 		System.out.println();
 		System.out.println("Reverse of Long text is " + reversWords("Sebahat Onur Atilla Deniz Cenk Hamza Mehmet Ali Onur Seçil Nariman Özkan Fulya Murat"));
+		System.out.println();
+		/*------------------------------------*/
+		System.out.println();
+		System.out.println("Test lastLetterCap is " + lastLetterCap("Merhaba arkadaþlar nasýlsýnýz"));
 	}
 	static boolean isPalindrome (String word) {
 		String newWord = "";
@@ -80,5 +84,16 @@ public class HomeWork2 {
 			newLongText += newWord + " ";
 		}
 		return newLongText;
+	}
+	
+	static String lastLetterCap(String text) {
+		String [] newArray = text.split(" ");
+		String longText = "";
+		for (String string : newArray) {
+			String s = string.substring(string.length()-1, string.length());
+			s = s.toUpperCase();
+			longText += " "+(string.substring(0, string.length()-1) + s);
+		}
+		return longText;
 	}
 }
