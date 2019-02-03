@@ -14,7 +14,7 @@ public class Test {
 		Pilot p4 = new Pilot("Yaren", 28, 4, PilotStatus.SECONDARY);
 		
 		Plane plane1 = new Plane("Plane 1", PlaneType.SMALLJET);
-		Plane plane2 = new Plane("Plane 2", PlaneType.SMALLJET);
+		Plane plane2 = new Plane("Plane 2", PlaneType.LARGEJET);
 		
 		Date arrivalDate = new Date();
 		Date departureDate = new Date();
@@ -38,9 +38,18 @@ public class Test {
 				p3, p4, 
 				plane2, 
 				false);
+		
+		Users u1 = new Users("Yunus", "yunussbilecen", "12345", "1155 7755 7788 9966");
+		Users u2 = new Users("Deneme1", "deneme1@gmail.com", "12345", "1155 7755 7788");
+		
+		
+		flight1.addUser(u1);
+		flight1.addUser(u2);
+		
+		flight2.addUser(u1);
 		flight1.displayInformation();
-		System.out.println("------------------------------------------------------");
-		flight2.displayInformation();
+		
+		System.out.println("------------------------------------------------------");		
 		
 	}
 

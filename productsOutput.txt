@@ -1,0 +1,23 @@
+***********************
+COMPUTER
+	toshiba:2000
+	dell:2340
+	asus:1970
+	mac:5000
+	fujitsu:3500
+***********************
+PHONE
+	iphone:3500
+	lg:2800
+	samsung:3200
+	lenovo:1800
+	venus:1900
+***********************
+TABLET
+	ipad:1250
+	samsung:1100
+	asus:1350
+	fujitsu:1000
+	casper:800
+***********************
+Total price of products: 33510

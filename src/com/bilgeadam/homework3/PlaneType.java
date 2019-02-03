@@ -2,9 +2,9 @@ package com.bilgeadam.homework3;
 
 public enum PlaneType {
 	
-	SMALLJET(10, 3000),
-	LARGEJET(20, 4000),
-	CARGO(30, 5000);
+	SMALLJET(1, 3000),
+	LARGEJET(3, 4000),
+	CARGO(5, 5000);
 	int capacity,range;
 	
 	private PlaneType(int capacity, int range) {
